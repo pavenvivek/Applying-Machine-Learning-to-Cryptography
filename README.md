@@ -1,5 +1,7 @@
 # A Study on Extending Homomorphic Encryptions to Machine Learning
 
+Note: Read the Project_Report.pdf for more details.
+
 The code in this repository implements a three layer fully-connected feed-forward neural network. It has an input layer and a hidden layer with 12 nodes each. The output layer has 4 nodes to classify the data into four categories [0, 90, 180, 270]. I used 1-hot encoding scheme to encode the output labels. For each image from the input dataset, the pixel values at indices [2, 47, 185, 119, 122, 170, 146, 173, 176, 149, 191, 188] are the features of interest considered by the neural network during learning and classification. The input to the neural network is fed using the values retrieved from the pixel data using the above list. These indices are the nodes at the top three layers of a decision tree which was obtained by calculating the minimum entropy.
 
 The accuracy of the classification done by neural networks is as follows.
